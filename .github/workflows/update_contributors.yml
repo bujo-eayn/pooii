@@ -1,0 +1,32 @@
+name: Update Contributors
+
+on:
+  push:
+    branches:
+      - "*"  # Run on pushes to all branches
+
+jobs:
+  update_contributors:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x  # Specify your Python version
+
+      - name: Run script
+        run: |
+          pip install requests
+          python update_contributors.py  # Replace with the actual script filename
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add CONTRIBUTORS.md
+          git commit -m "Update contributors"
+          git push
