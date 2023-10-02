@@ -4,35 +4,38 @@
 Our Solution demonstrates the use of OOP principles to successfully process the MASSIVE dataset, generated required files, and integrated Google Drive uploading into our workflow.
 
 ## Folder Structure
-massive/
-│
-├── data/
-│   ├── jsonl_data/
-│   │   ├── en-US.jsonl
-│   │   ├── te-IN.jsonl
-│   │   ├── ...
-│   │   └── (other language codes).jsonl
-│
-├── src/
-│   ├── __init__.py
-│   ├── dataset_processor.py
-│   ├── file_generator.py
-│   ├── google_drive_integration.py
-│   ├── language_mapping/
-│   │   ├── __init__.py
-│   │   ├── language_mapper.py
-│   └── main.py
-│
-├── output/
-│
-├── actions_scripts/
-│   ├── contributors.py
-│
-├── .github/
-│   ├── workflows/
-│   │   ├── update_contributors.yml
-│
-├── README.md
+
+    ```bash
+        massive/
+        │
+        ├── data/
+        │   ├── jsonl_data/
+        │   │   ├── en-US.jsonl
+        │   │   ├── te-IN.jsonl
+        │   │   ├── ...
+        │   │   └── (other language codes).jsonl
+        │
+        ├── src/
+        │   ├── __init__.py
+        │   ├── dataset_processor.py
+        │   ├── file_generator.py
+        │   ├── google_drive_integration.py
+        │   ├── language_mapping/
+        │   │   ├── __init__.py
+        │   │   ├── language_mapper.py
+        │   └── main.py
+        │
+        ├── output/
+        │
+        ├── actions_scripts/
+        │   ├── contributors.py
+        │
+        ├── .github/
+        │   ├── workflows/
+        │   │   ├── update_contributors.yml
+        │
+        ├── README.md
+    ```
 
 ## Instructions
 Dependencies that need to be installed or set up before proceeding.
@@ -90,10 +93,3 @@ List the project authors and contributors.
 * 145184     Johnny Ngare
 * 136723      David Kungu
 * 135358      Sheldon Ngetich
-
-
-## Contributors
-
-<!-- Contributors row -->
-[![Contributors](https://img.shields.io/github/contributors/bujo-eayn/pooii)](https://github.com/bujo-eayn/pooii/graphs/contributors)
-
