@@ -21,7 +21,7 @@ jobs:
       - name: Run script
         run: |
           pip install requests
-          python update_contributors.py  # Replace with the actual script filename
+          python contributors.py  # Replace with the actual script filename
 
       - name: Commit and push changes
         run: |
